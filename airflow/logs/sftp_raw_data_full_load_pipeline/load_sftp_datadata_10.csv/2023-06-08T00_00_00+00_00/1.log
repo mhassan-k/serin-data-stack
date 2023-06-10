@@ -1,0 +1,69 @@
+[2023-06-09 15:08:32,505] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 15:08:32,674] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 15:08:32,677] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:08:32,679] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 15:08:32,681] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:08:32,824] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): load_sftp_datadata_10.csv> on 2023-06-08 00:00:00+00:00
+[2023-06-09 15:08:32,841] {standard_task_runner.py:52} INFO - Started process 1477 to run task
+[2023-06-09 15:08:32,882] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'load_sftp_datadata_10.csv', 'scheduled__2023-06-08T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpbz_n674x', '--error-file', '/tmp/tmpc58s9ab3']
+[2023-06-09 15:08:32,911] {standard_task_runner.py:77} INFO - Job 25: Subtask load_sftp_datadata_10.csv
+[2023-06-09 15:08:33,120] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [running]> on host 8cb5811d1998
+[2023-06-09 15:08:33,532] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=load_sftp_datadata_10.csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-08T00:00:00+00:00
+[2023-06-09 15:08:33,597] {logging_mixin.py:109} INFO - error while inserting to table: [Errno 2] No such file or directory: '../data/temp_files/None'
+[2023-06-09 15:08:33,690] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-06-09 15:08:33,830] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=sftp_raw_data_full_load_pipeline, task_id=load_sftp_datadata_10.csv, execution_date=20230608T000000, start_date=20230609T150832, end_date=20230609T150833
+[2023-06-09 15:08:36,547] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-06-09 15:22:32,311] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv manual__2023-06-09T15:20:24.730543+00:00 [queued]>
+[2023-06-09 15:22:32,493] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv manual__2023-06-09T15:20:24.730543+00:00 [queued]>
+[2023-06-09 15:22:32,502] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:22:32,504] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 15:22:32,504] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:22:32,652] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): load_sftp_datadata_10.csv> on 2023-06-09 15:20:24.730543+00:00
+[2023-06-09 15:22:32,672] {standard_task_runner.py:52} INFO - Started process 3585 to run task
+[2023-06-09 15:22:32,683] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'load_sftp_datadata_10.csv', 'manual__2023-06-09T15:20:24.730543+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpbegu2qdn', '--error-file', '/tmp/tmpy0pv9k1_']
+[2023-06-09 15:22:32,709] {standard_task_runner.py:77} INFO - Job 86: Subtask load_sftp_datadata_10.csv
+[2023-06-09 15:22:33,004] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv manual__2023-06-09T15:20:24.730543+00:00 [running]> on host 8cb5811d1998
+[2023-06-09 15:22:33,186] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=load_sftp_datadata_10.csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-09T15:20:24.730543+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-09T15:20:24.730543+00:00
+[2023-06-09 15:22:33,229] {logging_mixin.py:109} INFO - error while inserting to table: [Errno 2] No such file or directory: '../data/temp_files/None'
+[2023-06-09 15:22:33,314] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-06-09 15:22:33,393] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=sftp_raw_data_full_load_pipeline, task_id=load_sftp_datadata_10.csv, execution_date=20230609T152024, start_date=20230609T152232, end_date=20230609T152233
+[2023-06-09 15:22:34,085] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-06-09 16:52:48,305] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 16:52:48,658] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 16:52:48,661] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 16:52:48,662] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 16:52:48,664] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 16:52:48,856] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): load_sftp_datadata_10.csv> on 2023-06-08 00:00:00+00:00
+[2023-06-09 16:52:48,884] {standard_task_runner.py:52} INFO - Started process 953 to run task
+[2023-06-09 16:52:48,894] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'load_sftp_datadata_10.csv', 'scheduled__2023-06-08T00:00:00+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpq80_etzr', '--error-file', '/tmp/tmp5d5smxu7']
+[2023-06-09 16:52:48,922] {standard_task_runner.py:77} INFO - Job 37: Subtask load_sftp_datadata_10.csv
+[2023-06-09 16:52:49,078] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 16:52:49,557] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=load_sftp_datadata_10.csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-08T00:00:00+00:00
+[2023-06-09 16:52:49,625] {logging_mixin.py:109} INFO - error while inserting to table: [Errno 2] No such file or directory: '/opt/data/temp_files/None'
+[2023-06-09 16:52:49,774] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-06-09 16:52:49,994] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=sftp_raw_data_full_load_pipeline, task_id=load_sftp_datadata_10.csv, execution_date=20230608T000000, start_date=20230609T165248, end_date=20230609T165249
+[2023-06-09 16:52:50,939] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

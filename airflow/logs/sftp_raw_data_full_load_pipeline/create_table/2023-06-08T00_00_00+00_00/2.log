@@ -1,0 +1,94 @@
+[2023-06-09 15:20:52,491] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.create_table manual__2023-06-09T15:20:24.730543+00:00 [queued]>
+[2023-06-09 15:20:52,529] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.create_table manual__2023-06-09T15:20:24.730543+00:00 [queued]>
+[2023-06-09 15:20:52,530] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:20:52,531] {taskinstance.py:1242} INFO - Starting attempt 2 of 2
+[2023-06-09 15:20:52,532] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 15:20:52,578] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): create_table> on 2023-06-09 15:20:24.730543+00:00
+[2023-06-09 15:20:52,587] {standard_task_runner.py:52} INFO - Started process 3041 to run task
+[2023-06-09 15:20:52,594] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'create_table', 'manual__2023-06-09T15:20:24.730543+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpjdcuxldl', '--error-file', '/tmp/tmp_2ahxapt']
+[2023-06-09 15:20:52,602] {standard_task_runner.py:77} INFO - Job 45: Subtask create_table
+[2023-06-09 15:20:52,695] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.create_table manual__2023-06-09T15:20:24.730543+00:00 [running]> on host 8cb5811d1998
+[2023-06-09 15:20:52,806] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-09T15:20:24.730543+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-09T15:20:24.730543+00:00
+[2023-06-09 15:20:52,850] {logging_mixin.py:109} INFO - Error creating table (psycopg2.errors.SyntaxError) syntax error at or near ")"
+LINE 17: );
+         ^
+
+[SQL: CREATE TABLE IF NOT EXISTS leads_sftp
+(
+    "ENTRYDATE" TEXT NOT NULL,
+    "LEADNUMBER" TEXT NOT NULL,
+    "email_hash" TEXT DEFAULT NULL,
+    "phone_hash" TEXT DEFAULT NULL,
+    "CITY" TEXT DEFAULT NULL,
+    "STATE" TEXT DEFAULT NULL,
+    "ZIP" TEXT DEFAULT NULL,
+    "Appt_Date" TEXT DEFAULT NULL,
+    "Set" TEXT DEFAULT NULL,
+    "Demo" TEXT DEFAULT NULL,
+    "Dispo" TEXT DEFAULT NULL,
+    "Job_Status" TEXT DEFAULT NULL,
+    "loaded_at" TEXT DEFAULT NULL,
+
+);
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2023-06-09 15:20:52,891] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-06-09 15:20:52,950] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=sftp_raw_data_full_load_pipeline, task_id=create_table, execution_date=20230609T152024, start_date=20230609T152052, end_date=20230609T152052
+[2023-06-09 15:20:53,308] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-06-09 21:53:43,169] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.create_table scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 21:53:43,219] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.create_table scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 21:53:43,220] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 21:53:43,221] {taskinstance.py:1242} INFO - Starting attempt 2 of 2
+[2023-06-09 21:53:43,222] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 21:53:43,262] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): create_table> on 2023-06-08 00:00:00+00:00
+[2023-06-09 21:53:43,272] {standard_task_runner.py:52} INFO - Started process 11449 to run task
+[2023-06-09 21:53:43,278] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'create_table', 'scheduled__2023-06-08T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmp8xwksmnw', '--error-file', '/tmp/tmpkyi72f6s']
+[2023-06-09 21:53:43,288] {standard_task_runner.py:77} INFO - Job 59: Subtask create_table
+[2023-06-09 21:53:43,384] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.create_table scheduled__2023-06-08T00:00:00+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 21:53:43,499] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-08T00:00:00+00:00
+[2023-06-09 21:53:43,542] {logging_mixin.py:109} INFO - Successfull
+[2023-06-09 21:53:43,544] {python.py:152} INFO - Done. Returned value was: None
+[2023-06-09 21:53:43,678] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=sftp_raw_data_full_load_pipeline, task_id=create_table, execution_date=20230608T000000, start_date=20230609T215343, end_date=20230609T215343
+[2023-06-09 21:53:43,775] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-06-09 21:53:44,020] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_1.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,024] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_14.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,027] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_18.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,031] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_19.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,034] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_2.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,037] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_20.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,040] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_4.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,043] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_5.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,046] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_6.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,050] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_7.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,053] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_21.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,056] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_22.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,059] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_3.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,062] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_8.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,064] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_9.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,068] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.extract_from_file_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,071] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.clean_sftp_files_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,074] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_15.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,077] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_10.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,079] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_11.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,082] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_12.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,085] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_13.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,088] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_16.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,091] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_datadata_17.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,094] {dagrun.py:549} WARNING - Failed to get task '<TaskInstance: sftp_raw_data_full_load_pipeline.load_sftp_data_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [removed]>' for dag 'sftp_raw_data_full_load_pipeline'. Marking it as removed.
+[2023-06-09 21:53:44,192] {local_task_job.py:264} INFO - 21 downstream tasks scheduled from follow-on schedule check

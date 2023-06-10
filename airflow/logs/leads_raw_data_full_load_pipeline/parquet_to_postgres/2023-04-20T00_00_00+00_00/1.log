@@ -1,0 +1,27 @@
+[2023-06-09 23:28:44,096] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-04-20T00:00:00+00:00 [queued]>
+[2023-06-09 23:28:44,174] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-04-20T00:00:00+00:00 [queued]>
+[2023-06-09 23:28:44,176] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 23:28:44,178] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 23:28:44,180] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 23:28:44,254] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): parquet_to_postgres> on 2023-04-20 00:00:00+00:00
+[2023-06-09 23:28:44,275] {standard_task_runner.py:52} INFO - Started process 26746 to run task
+[2023-06-09 23:28:44,287] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'leads_raw_data_full_load_pipeline', 'parquet_to_postgres', 'scheduled__2023-04-20T00:00:00+00:00', '--job-id', '542', '--raw', '--subdir', 'DAGS_FOLDER/leads_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmp44tuhb6x', '--error-file', '/tmp/tmp9j31hoc5']
+[2023-06-09 23:28:44,313] {standard_task_runner.py:77} INFO - Job 542: Subtask parquet_to_postgres
+[2023-06-09 23:28:44,619] {logging_mixin.py:109} INFO - Running <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-04-20T00:00:00+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 23:28:44,904] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=leads_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=parquet_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-20T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-20T00:00:00+00:00
+[2023-06-09 23:28:49,281] {logging_mixin.py:109} INFO - Error loading Parquet file into PostgreSQL: (psycopg2.errors.UndefinedTable) table "leads_sft" does not exist
+
+[SQL: 
+DROP TABLE leads_sft]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2023-06-09 23:28:49,283] {python.py:152} INFO - Done. Returned value was: None
+[2023-06-09 23:28:49,384] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=leads_raw_data_full_load_pipeline, task_id=parquet_to_postgres, execution_date=20230420T000000, start_date=20230609T232844, end_date=20230609T232849
+[2023-06-09 23:28:49,607] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-06-09 23:28:50,587] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,66 @@
+[2023-06-09 21:51:10,100] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.clean_sftp_files_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 21:51:10,176] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_full_load_pipeline.clean_sftp_files_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [queued]>
+[2023-06-09 21:51:10,177] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 21:51:10,178] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 21:51:10,179] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 21:51:10,219] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): clean_sftp_files_data_2.csv> on 2023-06-08 00:00:00+00:00
+[2023-06-09 21:51:10,230] {standard_task_runner.py:52} INFO - Started process 11150 to run task
+[2023-06-09 21:51:10,237] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_full_load_pipeline', 'clean_sftp_files_data_2.csv', 'scheduled__2023-06-08T00:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpypawq5le', '--error-file', '/tmp/tmpbh1wcomw']
+[2023-06-09 21:51:10,246] {standard_task_runner.py:77} INFO - Job 57: Subtask clean_sftp_files_data_2.csv
+[2023-06-09 21:51:10,343] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_full_load_pipeline.clean_sftp_files_data_2.csv scheduled__2023-06-08T00:00:00+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 21:51:10,468] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=clean_sftp_files_data_2.csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-08T00:00:00+00:00
+[2023-06-09 21:51:10,492] {taskinstance.py:1686} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1324, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1443, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1499, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sftp_raw_data_full_load_pipeline.py", line 40, in clear_sftp
+    os.remove(f'../data/SFTP/{sftp_file_name}')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/SFTP/2023-06-09_21:50:59.018355_leads_sftp.json'
+[2023-06-09 21:51:10,531] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=sftp_raw_data_full_load_pipeline, task_id=clean_sftp_files_data_2.csv, execution_date=20230608T000000, start_date=20230609T215110, end_date=20230609T215110
+[2023-06-09 21:51:10,574] {standard_task_runner.py:91} ERROR - Failed to execute job 57 for task clean_sftp_files_data_2.csv
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1324, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1443, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1499, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sftp_raw_data_full_load_pipeline.py", line 40, in clear_sftp
+    os.remove(f'../data/SFTP/{sftp_file_name}')
+FileNotFoundError: [Errno 2] No such file or directory: '../data/SFTP/2023-06-09_21:50:59.018355_leads_sftp.json'
+[2023-06-09 21:51:10,615] {local_task_job.py:154} INFO - Task exited with return code 1
+[2023-06-09 21:51:10,688] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

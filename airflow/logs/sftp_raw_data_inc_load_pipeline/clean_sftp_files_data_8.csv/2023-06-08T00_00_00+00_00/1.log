@@ -1,0 +1,23 @@
+[2023-06-09 22:16:39,303] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_inc_load_pipeline.clean_sftp_files_data_8.csv manual__2023-06-09T22:03:08.195880+00:00 [queued]>
+[2023-06-09 22:16:39,395] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: sftp_raw_data_inc_load_pipeline.clean_sftp_files_data_8.csv manual__2023-06-09T22:03:08.195880+00:00 [queued]>
+[2023-06-09 22:16:39,396] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 22:16:39,397] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 22:16:39,398] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 22:16:39,444] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): clean_sftp_files_data_8.csv> on 2023-06-09 22:03:08.195880+00:00
+[2023-06-09 22:16:39,455] {standard_task_runner.py:52} INFO - Started process 15290 to run task
+[2023-06-09 22:16:39,478] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'sftp_raw_data_inc_load_pipeline', 'clean_sftp_files_data_8.csv', 'manual__2023-06-09T22:03:08.195880+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/sftp_raw_data_inc_load_pipeline.py', '--cfg-path', '/tmp/tmpgy4f0owu', '--error-file', '/tmp/tmpxmdyes3q']
+[2023-06-09 22:16:39,491] {standard_task_runner.py:77} INFO - Job 203: Subtask clean_sftp_files_data_8.csv
+[2023-06-09 22:16:39,605] {logging_mixin.py:109} INFO - Running <TaskInstance: sftp_raw_data_inc_load_pipeline.clean_sftp_files_data_8.csv manual__2023-06-09T22:03:08.195880+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 22:16:39,746] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=Hassan@gmail.com
+AIRFLOW_CTX_DAG_OWNER=Hassan
+AIRFLOW_CTX_DAG_ID=sftp_raw_data_inc_load_pipeline
+AIRFLOW_CTX_TASK_ID=clean_sftp_files_data_8.csv
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-09T22:03:08.195880+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-09T22:03:08.195880+00:00
+[2023-06-09 22:16:39,756] {python.py:152} INFO - Done. Returned value was: None
+[2023-06-09 22:16:39,796] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=sftp_raw_data_inc_load_pipeline, task_id=clean_sftp_files_data_8.csv, execution_date=20230609T220308, start_date=20230609T221639, end_date=20230609T221639
+[2023-06-09 22:16:39,882] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-06-09 22:16:39,969] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

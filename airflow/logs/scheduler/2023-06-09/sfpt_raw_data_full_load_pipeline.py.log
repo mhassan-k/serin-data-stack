@@ -1,0 +1,110 @@
+[2023-06-09 15:00:38,034] {processor.py:163} INFO - Started process (PID=282) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:00:38,056] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:00:38,063] {logging_mixin.py:109} INFO - [2023-06-09 15:00:38,062] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:00:44,258] {logging_mixin.py:109} INFO - [2023-06-09 15:00:44,246] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:00:44,290] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:00:44,320] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 6.298 seconds
+[2023-06-09 15:01:15,417] {processor.py:163} INFO - Started process (PID=348) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:15,425] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:01:15,429] {logging_mixin.py:109} INFO - [2023-06-09 15:01:15,429] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:17,868] {logging_mixin.py:109} INFO - [2023-06-09 15:01:17,853] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:01:17,917] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:17,945] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 2.544 seconds
+[2023-06-09 15:01:48,612] {processor.py:163} INFO - Started process (PID=418) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:48,626] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:01:48,632] {logging_mixin.py:109} INFO - [2023-06-09 15:01:48,631] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:51,786] {logging_mixin.py:109} INFO - [2023-06-09 15:01:51,774] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:01:51,825] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:01:51,847] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 3.245 seconds
+[2023-06-09 15:02:22,642] {processor.py:163} INFO - Started process (PID=488) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:22,645] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:02:22,648] {logging_mixin.py:109} INFO - [2023-06-09 15:02:22,647] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:24,782] {logging_mixin.py:109} INFO - [2023-06-09 15:02:24,770] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:02:24,810] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:24,825] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 2.189 seconds
+[2023-06-09 15:02:55,272] {processor.py:163} INFO - Started process (PID=539) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:55,275] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:02:55,278] {logging_mixin.py:109} INFO - [2023-06-09 15:02:55,277] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:57,137] {logging_mixin.py:109} INFO - [2023-06-09 15:02:57,127] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:02:57,170] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:02:57,186] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 1.921 seconds
+[2023-06-09 15:03:27,767] {processor.py:163} INFO - Started process (PID=609) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:03:27,771] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:03:27,773] {logging_mixin.py:109} INFO - [2023-06-09 15:03:27,773] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:03:29,703] {logging_mixin.py:109} INFO - [2023-06-09 15:03:29,691] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 13, in <module>
+    from extractor import DataExtractor
+  File "../transfer_utils/extractor.py", line 4, in <module>
+    from transfer_utils.logger import *
+ModuleNotFoundError: No module named 'transfer_utils'
+[2023-06-09 15:03:29,734] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:03:29,750] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 1.990 seconds
+[2023-06-09 15:04:00,344] {processor.py:163} INFO - Started process (PID=676) to work on /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:04:00,349] {processor.py:620} INFO - Processing file /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py for tasks to queue
+[2023-06-09 15:04:00,351] {logging_mixin.py:109} INFO - [2023-06-09 15:04:00,351] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:04:02,443] {logging_mixin.py:109} INFO - [2023-06-09 15:04:02,433] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py", line 67, in <module>
+    for file in os.listdir(path_of_the_directory):
+FileNotFoundError: [Errno 2] No such file or directory: 'data/SFTP'
+[2023-06-09 15:04:02,473] {processor.py:634} WARNING - No viable dags retrieved from /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py
+[2023-06-09 15:04:02,489] {processor.py:171} INFO - Processing /opt/airflow/dags/sfpt_raw_data_full_load_pipeline.py took 2.151 seconds

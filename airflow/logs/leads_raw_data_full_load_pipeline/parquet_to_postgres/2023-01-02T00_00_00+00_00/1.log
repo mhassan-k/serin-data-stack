@@ -1,0 +1,23 @@
+[2023-06-09 23:24:21,025] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-06-09 23:24:21,172] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-06-09 23:24:21,174] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 23:24:21,175] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2023-06-09 23:24:21,176] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-09 23:24:21,302] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): parquet_to_postgres> on 2023-01-02 00:00:00+00:00
+[2023-06-09 23:24:21,316] {standard_task_runner.py:52} INFO - Started process 24542 to run task
+[2023-06-09 23:24:21,345] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'leads_raw_data_full_load_pipeline', 'parquet_to_postgres', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '434', '--raw', '--subdir', 'DAGS_FOLDER/leads_raw_data_full_load_pipeline.py', '--cfg-path', '/tmp/tmpxt5rowar', '--error-file', '/tmp/tmp7oiba2ke']
+[2023-06-09 23:24:21,365] {standard_task_runner.py:77} INFO - Job 434: Subtask parquet_to_postgres
+[2023-06-09 23:24:21,605] {logging_mixin.py:109} INFO - Running <TaskInstance: leads_raw_data_full_load_pipeline.parquet_to_postgres scheduled__2023-01-02T00:00:00+00:00 [running]> on host 6ba608d2de6e
+[2023-06-09 23:24:21,836] {taskinstance.py:1414} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=leads_raw_data_full_load_pipeline
+AIRFLOW_CTX_TASK_ID=parquet_to_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-06-09 23:24:28,827] {logging_mixin.py:109} INFO - Parquet file loaded into PostgreSQL successfully.
+[2023-06-09 23:24:28,834] {python.py:152} INFO - Done. Returned value was: None
+[2023-06-09 23:24:30,765] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=leads_raw_data_full_load_pipeline, task_id=parquet_to_postgres, execution_date=20230102T000000, start_date=20230609T232421, end_date=20230609T232430
+[2023-06-09 23:24:30,990] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-06-09 23:24:31,459] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

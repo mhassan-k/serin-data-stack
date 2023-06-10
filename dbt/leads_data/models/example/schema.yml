@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: flatten_leads
+    description: "Description of the model goes here"
+    columns:
+      - name: ENTRYDATE
+        description: "Description of the ENTRYDATE column goes here"
+      - name: LEADNUMBER
+        description: "Description of the LEADNUMBER column goes here"
+      - name: email_hash
+        description: "Description of the email_hash column goes here"
+      - name: phone_hash
+        description: "Description of the phone_hash column goes here"
+      - name: CITY
+        description: "Description of the CITY column goes here"
+      - name: STATE
+        description: "Description of the STATE column goes here"
+      - name: ZIP
+        description: "Description of the ZIP column goes here"
+      - name: ApptDate
+        description: "Description of the ApptDate column goes here"
+      - name: Set
+        description: "Description of the Set column goes here"
+      - name: Demo
+        description: "Description of the Demo column goes here"
+      - name: Dispo
+        description: "Description of the Dispo column goes here"
+      - name: JobStatus
+        description: "Description of the JobStatus column goes here"
+      - name: location
+        description: "Description of the location column goes here"
+      - name: lead_UUID
+        description: "Description of the lead_UUID column goes here"
+      - name: loaded_at
+        description: "Description of the loaded_at column goes here"
+
+  - name: leads_summery
+    description: Summary table showing leads generated per month within each state and conversion rates
+    columns:
+      - name: month
+        description: The month of lead generation
+      - name: STATE
+        description: The state where the leads were generated
+      - name: leads_generated
+        description: The number of leads generated
+      - name: leads_converted_to_appointments
+        description: The number of leads converted to appointments
+      - name: leads_converted_to_demos
+        description: The number of leads converted to demos
+
+
+
