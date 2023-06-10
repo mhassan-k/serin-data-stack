@@ -3,23 +3,53 @@ with Postgres, DBT, and Airflow
 
 Provide an overview of the project, its purpose, and any relevant background information.
 
-#Features
+<!-- GETTING STARTED -->
+## Getting Started
 
 
-#Installation
-Provide step-by-step instructions on how to install and set up the project locally. Include any dependencies that need to be installed and how to obtain them.
+### Prerequisites
 
-#Usage
-Provide examples and instructions on how to use the project. Include any necessary commands, configurations, or inputs required to run the project.
+Make sure you have docker installed on local machine.
+* Docker
+* DockerCompose
+  
+### Files Usage
 
+- `requirements.txt`: a text file lsiting the projet's dependancies.
+- `README.md`: Markdown text with a brief explanation of the project and the repository structure.
+- `Dockerfile`: build users can create an automated build that executes several command-line instructions in a container.
+- `docker-compose.yaml`: Integrates the various docker containers and run them in a single environment.
 
-#Troubleshooting
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/mhassan-k/serin-data-stack
+   ```
+2. browse airflow folder 
+    ```sh
+    docker-compose build
+    docker-compose up
+   ```
+3. Run
+   ```sh
+    docker-compose build
+    docker-compose up
+   ```
+4. Open Airflow web browser
+   ```JS
+   Navigate to `http://localhost:8000/` on the browser
+   activate and trigger dbt_dag
+   activate and trigger migrate
+    ```
+
+# Troubleshooting
 Provide troubleshooting tips or solutions to common problems that users may encounter.
 
-#Changelog
+# Changelog
 Document the version history of the project, along with the changes, additions, and fixes implemented in each version.
 
 
-#Conclusion
+# Conclusion
 Wrap up the README with any final thoughts, instructions, or calls to action.
 
