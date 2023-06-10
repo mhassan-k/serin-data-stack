@@ -1,7 +1,4 @@
-# Modern data tech stack 
-with Postgres, DBT, and Airflow
-
-Provide an overview of the project, its purpose, and any relevant background information.
+# Modern data tech stack
 
 <!-- GETTING STARTED -->
 ## Getting Started
