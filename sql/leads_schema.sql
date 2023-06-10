@@ -1,4 +1,3 @@
-CREATE DATABASE lead_data_analytics;
 CREATE TABLE IF NOT EXISTS leads_parquet
 (
     "lead_UUID" TEXT NOT NULL,
