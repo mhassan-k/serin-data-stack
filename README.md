@@ -35,6 +35,7 @@ Make sure you have docker installed on local machine.
 4. Open Airflow web browser
    ```JS
    Navigate to `http://localhost:8000/` on the browser
+   login --> username : airflow password : airflow
    activate and trigger  `leads_raw_data_full_load_pipeline` and `sftp_raw_data_inc_load_pipeline`
    activate and trigger `leads_dbt_models_run`
     ```
