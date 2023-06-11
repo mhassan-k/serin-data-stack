@@ -1,4 +1,4 @@
-# Modern data tech stack
+# Serin Data stack
 
 <!-- GETTING STARTED -->
 ## Getting Started
